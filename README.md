@@ -13,13 +13,11 @@ Foi utilizado:
 - Configuração do `typescript`
 - Tipagem das propriedades dos componentes
 
-### Autor
+### Autora
 ---
 
  <img style="border-radius: 50%;" src="./src/images/kaka.jpg" width="100px;" alt="kcerdeira"/>
- <br />
- <sub><b>Kamila Cerdeira</b></sub> 🚀
-
+ <b>Kamila Cerdeira</b> 🚀
 
 Feito com ❤️ por Kamila Cerdeira 👋🏽 Entre em contato!
 
