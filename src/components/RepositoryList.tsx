@@ -3,6 +3,12 @@ import { RepositoryItem } from "./RepositoryItem";
 
 import '../styles/repositories.scss'
 
+//aqui vamos definir a tipagem do estado, portanto sem props no final
+interface Repository {
+    name: string;
+    description: string;
+    html_url: string;
+}
 
 const repository = {
     name: 'unform',
@@ -13,7 +19,10 @@ const repository = {
 export function RepositoryList () {
 
     //como esse é um estado para uma [lista] de repositorios, ele começa como um array vazio []
-    const [repositories, setRepositories] = useState([]);
+    //pra que esse estado receba a tpagem defina acima colocamos o nome da tipagem entre <>
+    //se fosse receber apenas um repositorio bastava <Repository> mas como vai receber ua lista
+    //de repositorios passamos com um array <Repository[]>
+    const [repositories, setRepositories] = useState<Repository[]>([]);
 
     //o useEffect recebe dois parâmetros: {qual função} quero executar e [quando executar] ela (ex.: qd uma variável mudar)
     //aqui vamos usar o useEffect para que toda vez que a aplicação for renderizada ir lá na API do github 
